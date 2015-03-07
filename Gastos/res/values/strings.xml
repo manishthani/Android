@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Gastos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="month_array">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+    <string-array name="year_array">
+        <item>2014</item>
+        <item>2013</item>
+        <item>2012</item>
+    </string-array>
+    <string-array name="category_array">
+        <item>General</item>
+        <item>Supermercado</item>
+        <item>Ocio</item>
+        <item>Transporte</item>
+        <item>Factura</item>
+        <item>Restaurante</item>
+        <item>Personal</item>
+    </string-array>
+
+    <string name="title_activity_anadir_gasto">Añadir Gasto</string>
+    <string name="title_activity_modificar_gasto">Modificar Gasto</string>
+    <string name="title_activity_txt_file">Vista Previa fichero TXT generado</string>
+    <string name="title_activity_introduction">Gastos</string>
+    <string name="title_activity_ayuda">Ayuda</string>
+
+</resources>
