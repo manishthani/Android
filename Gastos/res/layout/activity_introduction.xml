@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:noHistory="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gastos.IntroductionActivity" >
+
+    <TextView
+        android:id="@+id/TituloApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Bienvenido a Gastos!"
+        android:textSize="40dp" />
+
+    <Button
+        android:id="@+id/loginButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/contrasenaEdit"
+        android:layout_alignRight="@+id/TituloApp"
+        android:layout_below="@+id/contrasenaEdit"
+        android:layout_marginTop="39dp"
+        android:text="Login"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/ayudaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/loginButton"
+        android:layout_alignRight="@+id/loginButton"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="14dp"
+        android:text="Ayuda" />
+
+    <TextView
+        android:id="@+id/helpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/contrasenaEdit"
+        android:layout_alignLeft="@+id/contrasenaEdit"
+        android:layout_marginBottom="52dp"
+        android:text="Introduzca contraseña de seguridad:\n[Contraseña por defecto: admin]" />
+
+    <EditText
+        android:id="@+id/contrasenaEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TituloApp"
+        android:layout_alignRight="@+id/TituloApp"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Password"
+        android:password="true"
+        android:singleLine="true" />
+
+</RelativeLayout>

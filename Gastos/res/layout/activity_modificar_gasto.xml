@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.gastos.AnadirGastoActivity" >
+
+    <TextView
+        android:id="@+id/simboloEuroText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="€"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/euroText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/simboloEuroText2"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/categoriaText2"
+        android:digits="1234567890."
+        android:ems="10"
+        android:hint="0.00"
+        android:inputType="numberDecimal"
+        android:maxLength="7" />
+
+    <Spinner
+        android:id="@+id/categoriaSpinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/categoriaText2"
+        android:layout_alignLeft="@+id/euroText2"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/anadirFinalButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/descripcionText2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fechaTextMod"
+        android:layout_marginTop="31dp"
+        android:text="Modificar cambios" />
+
+    <TextView
+        android:id="@+id/fechaTextMod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/descripcionText2"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="Poner Fecha" />
+
+    <EditText
+        android:id="@+id/descripcionText2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/descripcion2"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/descripcion2"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Poner descripción"
+        android:inputType="textMultiLine"
+        android:maxLength="100"
+        android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/categoriaText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/simboloEuroText2"
+        android:layout_below="@+id/simboloEuroText2"
+        android:layout_marginTop="41dp"
+        android:text="Categoria:" />
+
+    <TextView
+        android:id="@+id/descripcion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/categoriaText2"
+        android:layout_alignRight="@+id/categoriaSpinner2"
+        android:layout_below="@+id/categoriaSpinner2"
+        android:layout_marginTop="20dp"
+        android:text="Descripción [máx:100 letras]: " />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fechaTextMod"
+        android:layout_alignBottom="@+id/fechaTextMod"
+        android:layout_alignLeft="@+id/descripcionText2"
+        android:text="Fecha de Creación:  " />
+
+</RelativeLayout>
