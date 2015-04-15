@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  iden: 1
+  delay: 1
+  created: 1
+  karma: 1
+  about: MyText
+
+two:
+  iden: 1
+  delay: 1
+  created: 1
+  karma: 1
+  about: MyText
